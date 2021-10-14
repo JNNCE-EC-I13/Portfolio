@@ -12,6 +12,12 @@ def home():
 def rand(page_name):
 	return render_template(page_name)
 
+@app.route('/htmlcssjavascriptwork.html', methods=["GET"])
+def pageChange():
+	page = request.args.get('page')
+	print(page)
+	return render_template("htmlcssjavascriptwork.html", page=page)
+
 
 @app.route('/submit_form', methods=["POST"])
 def submit():

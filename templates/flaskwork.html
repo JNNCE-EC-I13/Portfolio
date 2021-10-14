@@ -11,11 +11,11 @@
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
+
   <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
   <link href="./static/assets/favicon.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>Title page</title>
 
 <link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
 
@@ -45,15 +45,18 @@
 
 
           <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
-            <li><a href="./index.html" title="" class="active">001</a></li>
-            <li><a href="./index.html" title="">002</a></li>
-            <li><a href="./index.html" title="">003</a></li>
-            <li><a href="./index.html" title="">004</a></li>
-            <li><a href="./index.html" title="">005</a></li>
-            <li><a href="./index.html" title="">006</a></li>
+            <li><a href="./pythonwork.html" title="">01</a></li>
+            <li><a href="./flaskwork.html" title="" class="active">02</a></li>
+            <li><a href="./htmlcssjavascriptwork.html?page=html" title="">03</a></li>
+            <li><a href="./htmlcssjavascriptwork.html?page=css" title="">04</a></li>
+            <li><a href="./htmlcssjavascriptwork.html?page=javascript" title="">05</a></li>
+            <li><a href="./githubwork.html" title="">06</a></li>
+            <li><a href="./pythonanywherework.html" title="">07</a></li>
+            <li><a href="./sublimework.html" title="">08</a></li>
+            <li><a href="./replitwork.html" title="">09</a></li>
           </ul>
 
-      </div> 
+      </div>
     </div>
   </nav>
 </header>
@@ -61,39 +64,38 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <img src="./static/assets/images/python.png" class="img-responsive" alt="" width="50%" height="50%" >
+        <img src="./static/assets/images/flask.png" class="img-responsive" alt="" width="10%" height="10%" >
         <div class="card-container">
           <div class="text-center">
-            <h1 class="h2">01 : Python</h1>
+            <h1 class="h2">02 : Flask</h1>
           </div>
-          <p>Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies, nisl nunc pulvinar ligula, id sodales arcu sapien in nisi. Quisque libero enim, mattis non augue posuere, venenatis dapibus urna.</p>
+          <p>Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications.</p>
 
-          <blockquote>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
-            <small class="pull-right">Irina Martin</small>
-          </blockquote>
+          <div class="text-center">
+            <h2 class="h3">Steps to Install</h1>
+          </div>
+          <dl>
+            <dt>1. Download Flask And Install Flask Using PIP</dt>
+              <dd>
+                Install Flask within the activated environment using pip
+                <pre>pip install Flask</pre>
+              </dd>
+            <br>
+            <dt>2. Test the Development Environment</dt>
+              <dd>
+                <ol>
+                  <li>Create a simple Flask application to test the newly created development environment.</li>
+
+                  <li>Make a file in the Flask project folder called hello.py.</li>
+
+                  <li>Edit the file using a text editor and add the following code to make an application that prints “Hello world!”:
+                    <pre>from flask import Flask<br>app = Flask(__name__)<br>@app.route('/')<br>def hello_world():<br>  return 'Hello world!'</pre>
+                  </li>
+                </ol>
+              </dd>
+          </dl>
         </div>
       </div>
-
-      
-      
-      <div class="col-md-8 col-md-offset-2 section-container-spacer">
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/python.png" class="img-responsive" alt="">
-            <p>Menphis skyline</p>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/python.png" class="img-responsive" alt="">
-            <p>Menphis skyline</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12">
-        <img src="./static/assets/images/work001-04.jpg" class="img-responsive" alt="">
-      </div>
-
     </div>
   </div>
 </div>
@@ -115,7 +117,7 @@
   });
 </script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID
 
 <script>
   (function (i, s, o, g, r, a, m) {
