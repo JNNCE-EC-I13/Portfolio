@@ -7,7 +7,6 @@ app = Flask(__name__)
 def home():
 	return render_template("index.html")
 
-
 @app.route('/<string:page_name>')
 def rand(page_name):
 	return render_template(page_name)
@@ -15,9 +14,8 @@ def rand(page_name):
 @app.route('/htmlcssjavascriptwork.html', methods=["GET"])
 def pageChange():
 	page = request.args.get('page')
-	print(page)
+	#print(page)
 	return render_template("htmlcssjavascriptwork.html", page=page)
-
 
 @app.route('/submit_form', methods=["POST"])
 def submit():
@@ -25,7 +23,7 @@ def submit():
 		data = request.form.to_dict()
 		print(data)
 		# with open("submitedForms", 'a', newline='') as f:
-		# 	f.write(f"Email: {data['email']} || Subject: {data['subject']} || Message: {data['message']}\n")
+		# 	f.write(f"Email: {data['email']} || Subject: {data['subject']} || Message: {data['message']}\n") 
 		with open('database.csv', 'a', newline='') as csvfile:
 			writer = csv.writer(csvfile)
 			writer.writerow([data["email"], data["subject"], data["message"]])
