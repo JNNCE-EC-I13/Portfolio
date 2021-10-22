@@ -62,13 +62,13 @@
                   <div class="row">
                     <div class="col-md-7">
                       <div class="form-group">
-                        <input type="email" class="form-control" id="email" name="email" {% if data %} placeholder="{{data['email']}}" {% else %} placeholder="Email" {% endif %} >
+                        <input type="email" class="form-control" id="email" name="email" {% if data %} value="{{data['email']}}" {% else %} placeholder="Email" {% endif %} >
                       </div>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="subject" name="subject" {% if data %} placeholder="{{data['subject']}}" {% else %} placeholder="Subject" {% endif %}>
+                        <input type="text" class="form-control" id="subject" name="subject" {% if data %} value="{{data['subject']}}" {% else %} placeholder="Subject" {% endif %}>
                       </div>
                       <div class="form-group">
-                        <textarea class="form-control" rows="5" name="message" {% if data %} placeholder="{{data['message']}}" {% else %} placeholder="Enter your message" {% endif %}></textarea>
+                        <textarea class="form-control" rows="5" name="message" {% if not data %} placeholder="Enter your message" {% endif %}>{% if data %}{{data['message']}}{% endif %}</textarea>
                       </div>
                       {% if submitted %}
                         {% if submitted=='yes' %}
